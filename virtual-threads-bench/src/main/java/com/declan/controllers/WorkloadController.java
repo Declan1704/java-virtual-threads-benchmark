@@ -9,7 +9,7 @@ public class WorkloadController {
     @GetMapping("/io-bound")
     public String ioBoundWorkload(@RequestParam(defaultValue = "100") int duration) {
         try {
-            Thread.sleep(duration   * 1000L);
+            Thread.sleep(duration);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             throw new RuntimeException(e);
@@ -36,4 +36,25 @@ public class WorkloadController {
         }
         return "Synchronized task completed";
     }
+
+    @GetMapping("/mixed")
+    public String mixed(@RequestParam(defaultValue = "10") int ms,
+                        @RequestParam(defaultValue = "50000") int iterations) {
+        
+        long result = 0;
+        for (int i = 0; i < iterations; i++) {
+            result += (long) i * i;
+        }
+
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            return "Interrupted";
+        }
+
+        return "Mixed task done (CPU + " + ms + "ms IO)";
+    }
+
+
 }

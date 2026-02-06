@@ -1,3 +1,15 @@
-com/declan/VirtualThreadsBenchApplication.class
+META-INF/CompilerHints
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_ioBoundLowConcurrency_jmhTest.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_jmhType_B3.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_ioBoundWorkload_jmhTest.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_jmhType_B2.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_mixedWorkload_jmhTest.class
 com/declan/App.class
 com/declan/controllers/WorkloadController.class
+com/declan/VirtualThreadsBenchApplication.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_jmhType.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_jmhType_B1.class
+META-INF/BenchmarkList
+com/declan/benchmarks/WorkloadBenchmark.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_synchronizedWorkload_jmhTest.class
+com/declan/benchmarks/jmh_generated/WorkloadBenchmark_cpuBoundWorkload_jmhTest.class
